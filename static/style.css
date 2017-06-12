@@ -1,32 +1,45 @@
 html {
   height: 100%;
   background: pink;
+  width: 100%;
 }
 
 body {
-  /*height: 100%;*/
   height: 100%;
+  width: 100%;
   background: yellow;
   box-sizing: border-box;
   margin: 0;
   color: red;
 }
 
+/* helper classes */
+.vertical-align {
+  /* set the parent element to display:table */
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
 .ff-mock-header {
   min-height: 62px; /* same as in wp theme */
   padding: 0.5em 0 0.5em 0; /* ditto */
+  width: 100%;
   background: red;
   text-align: center;
   font-size: 3em;
   color: black;
+  display: table;
 }
 
 .ff-mock-nav {
-  width: 100%;
+  min-width: 100%;
   background: rebeccapurple;
   font-size: 1.5em;
   text-align: center;
-  padding: 0.25em 55px; /**/
+  padding: 0.25em 0; /**/
+  height: 48px;
+  display: table;
  }
 
 .ff-mock-nav > a {
@@ -38,4 +51,9 @@ body {
   border-top: black solid 5px;
   background: orange;
   text-align: center;
+}
+
+/* banner section */
+.ff-fp-banner {
+  background: url('ff-home-banner.jpg')
 }
