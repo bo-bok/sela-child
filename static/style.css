@@ -12,6 +12,26 @@ body {
   color: red;
 }
 
+.ff-mock-header {
+  min-height: 62px; /* same as in wp theme */
+  padding: 0.5em 0 0.5em 0; /* ditto */
+  background: red;
+  text-align: center;
+  font-size: 3em;
+  color: black;
+}
+
+.ff-mock-nav {
+  width: 100%;
+  background: rebeccapurple;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.25em 55px; /**/
+ }
+
+.ff-mock-nav > a {
+  padding: 0.75em 1em 0.75em 0;
+}
 
 .ff-fp-section {
   height: 100%;
