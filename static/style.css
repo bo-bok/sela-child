@@ -68,9 +68,9 @@ body {
   background: rgba(131, 127, 132, 0.3);
 }
 
-/*.ff-fp-section-inner {
+.ff-fp-section-inner {
   height: 100%;
   width: 100%;
-  display: table;
+  display: table; /* needed to vertically align children */
   text-align: center;
-}*/
+}
