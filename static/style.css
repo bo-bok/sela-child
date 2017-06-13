@@ -54,6 +54,7 @@ body {
   background: orange;
   text-align: center;
   width: 100%;
+  display: table;
 }
 
 .ff-fp-banner {
@@ -66,11 +67,15 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(131, 127, 132, 0.3);
+  display: table;
 }
 
 .ff-fp-section-inner {
   height: 100%;
   width: 100%;
-  display: table; /* needed to vertically align children */
+  /*display: table; */
+  /* needed to vertically align children */
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
