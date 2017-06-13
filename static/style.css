@@ -1,6 +1,6 @@
 html {
   min-height: 100%;
-  background: pink;
+  /*background: pink;*/
   width: 100%;
 }
 
@@ -8,10 +8,11 @@ body {
   height: 100%;
   width: 100%;
   min-width: 320px;
-  background: yellow;
+  /*background: yellow;*/
   box-sizing: border-box;
   margin: 0;
-  color: red;
+  color: #233D4D;
+  font-size: 16px;
 }
 
 /* helper classes */
@@ -26,7 +27,7 @@ body {
   min-height: 62px; /* same as in wp theme */
   padding: 0.5em 0 0.5em 0; /* ditto */
   width: 100%;
-  background: red;
+  /*background: red;*/
   text-align: center;
   font-size: 3em;
   color: black;
@@ -35,7 +36,7 @@ body {
 
 .ff-mock-nav {
   min-width: 100%;
-  background: rebeccapurple;
+  background: #f25f70;
   font-size: 1.5em;
   text-align: center;
   padding: 0.25em 0; /**/
@@ -50,11 +51,19 @@ body {
 .ff-fp-section {
   height: 800px; /* fallback */
   height: 100vh;
-  border-top: black solid 5px;
-  background: orange;
+  border-top: black solid 1px;
+  /*background: orange;*/
   text-align: center;
   width: 100%;
   display: table;
+}
+
+.ff-fp-section__inner {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .ff-fp-banner {
@@ -70,12 +79,21 @@ body {
   display: table;
 }
 
-.ff-fp-section__inner {
+.ff-fp-banner__inner {
   height: 100%;
   width: 100%;
-  /*display: table; */
-  /* needed to vertically align children */
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+}
+
+.ff-fp-banner__heading {
+  font-size: 4em;
+  margin-top: 0;
+  color: #fff;
+}
+
+.ff-fp-banner__blurb {
+  font-size: 1.75em;
+  color: #fff;
 }
