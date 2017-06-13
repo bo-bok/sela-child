@@ -25,6 +25,17 @@ body {
 }
 
 /* header */
+
+.fixed-header {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  /*margin-bottom: 0;*/
+}
+
 .ff-mock-header {
   min-height: 62px; /* same as in wp theme */
   padding: 0.5em 0 0.5em 0; /* ditto */
@@ -65,7 +76,7 @@ body {
 .ff-fp-section__inner {
   width: 80%;
   height: 100%;
-  background: purple;
+  /*background: purple;*/
   display: table;
   margin: 0 auto;
 }
@@ -77,10 +88,11 @@ body {
 
 /* front page banner */
 .ff-fp-banner {
-  max-height: 70vh;
+  height: 80vh;
   width: 100%;
   background: url('../ff-home-banner.jpg') no-repeat fixed;
   background-size: cover;
+  margin-top: 170px;
 }
 
 .ff-fp-banner__opacity {
@@ -92,7 +104,7 @@ body {
 .ff-fp-banner__inner {
   width: 80%;
   height: 100%;
-  background: purple;
+  /*background: purple;*/
   display: table;
   margin: 0 auto;
 }
@@ -111,4 +123,77 @@ body {
 .ff-fp-banner__blurb {
   font-size: 1.75em;
   color: #fff;
+}
+
+/* front page testimonials section */
+.ff-fp-testimonial {
+  width: 45%;
+  height: auto;
+  min-height: 15em;
+  background: yellow;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5em;
+}
+
+.test {
+  font-size: 0;
+}
+
+
+/* CONTACT FORM SECTION */
+/* ========================================================================= */
+.ff-fp-contact-form__container {
+  max-width: 40em;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ff-fp-contact-form__header {
+  font-size: 2em;
+}
+.ff-fp-contact-form__input,
+.ff-fp-contact-form__label,
+.ff-fp-contact-form__submit {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.ff-fp-contact-form__input,
+.ff-fp-contact-form__label {
+  display: block;
+  width: 100%;
+}
+
+.ff-fp-contact-form__input {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 0;
+  -webkit-appearance: none; /* Removes weird inner shadow on iOS Safari */
+}
+
+.ff-fp-contact-form__input:focus,
+.ff-fp-contact-form__submit:focus,
+.ff-fp-contact-form__submit:hover {
+  outline: none;
+  color: white;
+  background-color: #5973BF;
+  border-color: #5973BF;
+}
+
+#message {
+  min-height: 10em;
+}
+
+.ff-fp-contact-form__submit {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0.75em;
+  font-size: 1.25em;
+  background: none;
+  border: 1px solid;
+  transition: all 0.2s;
 }

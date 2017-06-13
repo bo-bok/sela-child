@@ -7,6 +7,7 @@
   </head>
   <body>
 
+  <section class="fixed-header">
     <header class="ff-mock-header">
       <div class="vertical-align">
         Frou Frou Days
@@ -21,6 +22,7 @@
         <a href="#">blah</a>
       </div>
     </nav>
+  </section>
 
     <section class="ff-fp-section ff-fp-banner">
       <div class="ff-fp-banner__opacity">
@@ -33,7 +35,7 @@
       </div>
     </section>
 
-    <section class="ff-fp-section">
+    <section class="ff-fp-section ff-fp-about">
       <div class="ff-fp-section__inner">
         <div class="ff-fp-section__content-container">
           section 1
@@ -42,7 +44,7 @@
       </div>
     </section>
 
-    <section class="ff-fp-section">
+    <section class="ff-fp-section ff-fp-services">
       <div class="ff-fp-section__inner">
         <div class="ff-fp-section__content-container">
           section 2
@@ -52,21 +54,70 @@
       </div>
     </section>
 
-    <section class="ff-fp-section">
+    <section class="ff-fp-section ff-fp-testimonials">
       <div class="ff-fp-section__inner">
         <div class="ff-fp-section__content-container">
-          section 3
-          testimonials
+          <!-- section 3 -->
+          <!-- testimonials -->
           <!-- (4 sqaures in 2 columns? img in backfground with text overlay) -->
+
+<article class="test">
+
+          <div class="ff-fp-testimonial">
+            <p>Frou Frou Days styled our recent family celebration. They transformed a difficult space into a party venue with real wow factor. My parents who live in Italy are still talking about it!</p>
+            <p>Irene de Lorenzis</p>
+          </div>
+          <div class="ff-fp-testimonial">
+            <p>Oh what a party! I’m a musician and Clare made beautiful bespoke bunting from vintage sheet music that she acquired (secretly) from my friends. She also found out my favourite colours and added balloons and felt garlands to match. Honestly she makes magic happen.</p>
+            <p>Jo Benjafield</p>
+          </div>
+          <div class="ff-fp-testimonial">
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Etiam Venenatis</p>
+          </div>
+          <div class="ff-fp-testimonial">
+            <p>I’ve been to several events styled by Frou Frou Days and they’re always amazing. It’s the details that make their parties so special – they think about every little thing.</p>
+            <p>Amanda Richardson</p>
+          </div>
+        </article>
+
+
         </div>
       </div>
     </section>
 
-    <section class="ff-fp-section">
+    <section class="ff-fp-section ff-fp-contact">
       <div class="ff-fp-section__inner">
         <div class="ff-fp-section__content-container">
-          section 4
-          contact form
+
+          <section id="contact" class="ff-fp-contact-form">
+
+            <header class="ff-fp-contact-form__header">
+              <h2>Get in touch!</h2>
+            </header>
+
+            <form action="" method="POST" class="ff-fp-contact-form__container" accept-charset="utf-8">
+              <label for="name" name="name" class="ff-fp-contact-form__label">
+                  Name:
+                  <input id="name" type="text" class="ff-fp-contact-form__input">
+              </label>
+              <label for="email" name="_replyto" class="ff-fp-contact-form__label">
+                  Email:
+                  <input id="email" class="ff-fp-contact-form__input" type="email">
+              </label>
+              <label for="subject" class="ff-fp-contact-form__label">
+                  Subject:
+                  <input id="subject" class="ff-fp-contact-form__input" type="text" >
+              </label>
+              <label for="message" class="ff-fp-contact-form__label">
+                  Message:
+                  <input id="message" type="text-area" class="ff-fp-contact-form__input">
+              </label>
+              <button type="submit" class="ff-fp-contact-form__submit">Send</button>
+          </form>
+        </section>
+
+        </main>
         </div>
       </div>
     </section>
