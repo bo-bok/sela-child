@@ -43,7 +43,7 @@ body {
   /*background: red;*/
   text-align: center;
   font-size: 3em;
-  color: black;
+  color: #ef27a6;
   display: table;
 }
 
@@ -125,19 +125,67 @@ body {
   color: #fff;
 }
 
-/* front page testimonials section */
-.ff-fp-testimonial {
-  width: 45%;
-  height: auto;
-  min-height: 15em;
-  background: yellow;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0.5em;
+.ff-fp-banner__button {
+  /*display: block;*/
+  /*width: 10em;*/
+  /*height: 1em;*/
+  padding: 1em 5em;
+  font-size: 1em;
 }
 
-.test {
-  font-size: 0;
+/* SERVICES */
+.ff-fp-services-figure-wrapper {
+  width: 100%;
+}
+
+.ff-fp-services-figure {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: top;
+  min-height: 300px;
+  background: pink;
+  margin: 0.5rem;
+}
+
+@media(min-width: 650px) {
+  .ff-fp-services-figure {
+    width: 45%;
+  }
+}
+
+@media(min-width: 992px) {
+  .ff-fp-services-figure {
+    width: 21%;
+  }
+}
+
+/* front page testimonials section */
+
+.ff-fp-testimonial-container {
+  /*font-size: 0;*/
+  width: 100%;
+}
+
+.ff-fp-testimonial {
+  width: 100%;
+  height: 15em;
+  background: yellow;
+  /*font-size: 16px;*/
+  margin: 0.5em;
+  /*position: absolute;*/
+
+}
+
+@media(min-width: 772px) {
+  .ff-fp-testimonial {
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: top;
+  }
 }
 
 
@@ -180,8 +228,8 @@ body {
 .ff-fp-contact-form__submit:hover {
   outline: none;
   color: white;
-  background-color: #5973BF;
-  border-color: #5973BF;
+  background-color: #ef27a6;
+  border-color: #ef27a6;
 }
 
 #message {
@@ -196,4 +244,13 @@ body {
   background: none;
   border: 1px solid;
   transition: all 0.2s;
+}
+
+
+/* FOOTER */
+.ff-footer {
+  min-height: 5rem;
+  background: grey;
+  text-align: center;
+  overflow: hidden;
 }
