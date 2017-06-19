@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Patrick+Hand+SC');
+
+
+html {
+  min-height: 100%;
+  /*background: pink;*/
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  /*background: yellow;*/
+  margin: 0;
+  color: #383838;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/* helper classes */
+.vertical-align {
+  /* set the parent element to display:table */
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+/* header */
+
+.fixed-header {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  /*margin-bottom: 0;*/
+}
+
+.ff-mock-header {
+  min-height: 62px; /* same as in wp theme */
+  padding: 0.75rem 0 0.5rem 0; /* ditto */
+  width: 100%;
+  /*background: red;*/
+  text-align: center;
+  font-size: 3em;
+  color: #ef27a6;
+  display: table;
+}
+
+/* nav */
+.ff-mock-nav {
+  min-width: 100%;
+  background: #f25f70;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.25em 0; /**/
+  height: 48px;
+  display: table;
+ }
+
+.ff-mock-nav > a {
+  padding: 0.75em 1em 0.75em 0;
+}
+
+/* front page section setup */
+.ff-fp-section {
+  height: 800px; /* fallback */
+  height: 100vh;
+  width: 100%;
+  /*border-top: black solid 1px;*/
+  /*background: orange;*/
+  text-align: center;
+  display: table;
+}
+
+.ff-fp-section__inner {
+  width: 80%;
+  height: 100%;
+  /*background: purple;*/
+  display: table;
+  margin: 0 auto;
+}
+
+.ff-fp-section__content-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* front page banner */
+.ff-fp-banner {
+  height: 80vh;
+  width: 100%;
+  background: url('assets/ff-home-banner.jpg') no-repeat fixed;
+  background-size: cover;
+  margin-top: 170px;
+}
+
+.ff-fp-banner__opacity {
+  height: 100%;
+  width: 100%;
+  background: rgba(131, 127, 132, 0.5);
+}
+
+.ff-fp-banner__inner {
+  width: 80%;
+  height: 100%;
+  /*background: purple;*/
+  display: table;
+  margin: 0 auto;
+}
+
+.ff-fp-banner__content-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ff-fp-banner__heading {
+  font-size: 5.5em;
+  margin-top: 0;
+  /*margin-bottom: 3em;*/
+  color: #fff;
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+/*.ff-fp-banner__blurb {
+  font-size: 1.75em;
+  color: #fff;
+}*/
+
+.ff-fp-banner__button {
+  padding: 0.75rem 3rem;
+  font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 1em;
+  background: #ef27a6;
+  border: 0px;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+}
+
+.ff-fp-banner__button > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Patrick Hand SC', cursive;
+
+}
+
+
+/* ABOUT SECTION */
+
+.ff-fp-about {
+  /*font-size: 0;*/
+    background: url('assets/web_sprinkles_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.ff-fp-about--opacity {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .ff-fp-about--opacity {
+    height: 60%;
+
+  }
+}
+
+.ff-fp-about__header > h2{
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.ff-fp-about__text {
+  width: 100%;
+  /*background: pink;*/
+  height: 100%;
+  /*display: inline-block;*/
+  /*font-size: 1rem;*/
+  padding: 1rem;
+  text-align: left;
+
+  /*position: absolute;*/
+}
+
+.ff-fp-about__image {
+  width: 40%;
+  background: yellow;
+  height: 60%;
+  display: inline-block;
+  /*position: relative;*/
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+
+/* SERVICES */
+.ff-fp-services {
+  /*background: #C9B7B5;*/
+}
+.ff-fp-services__header {
+  margin-bottom: 3rem;
+}
+.ff-fp-services__header > h2 {
+  font-size: 3em;
+  /*margin-bottom: 0.5rem;*/
+  margin: 0;
+  font-family: 'Patrick Hand SC', cursive;
+}
+.ff-fp-services__header > p {
+  font-size: 1.25rem;
+}
+
+.ff-fp-services-figure-wrapper {
+  width: 100%;
+}
+
+.ff-fp-services-figure {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  min-height: 300px;
+  /*background: pink;*/
+  margin: 0.5rem;
+}
+
+.ff-fp-services-icon {
+  border-radius: 100%;
+  border: 10px solid #ececec;
+}
+
+.ff-fp-services-icon--red:hover {
+  border-color: #e96656;
+}
+
+.ff-fp-services-icon--green:hover {
+  border-color: #34d293;
+}
+
+.ff-fp-services-icon--blue:hover {
+  border-color: #3ab0e2;
+}
+
+.ff-fp-services-icon--yellow:hover {
+  border-color: #f7d861;
+}
+
+.ff-fp-services-figure__type-header {
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.ff-fp-services-figure__type-blurb {
+  /*color: red;*/
+}
+
+
+ /*#focus span:nth-child(4n+1) .focus-box .service-icon:focus*/
+
+/*
+1 #e96656
+2 #34d293
+3 #3ab0e2
+4 #f7d861
+
+span:nth-child(4n+1)*/
+
+@media(min-width: 650px) {
+  .ff-fp-services-figure {
+    width: 45%;
+  }
+}
+
+@media(min-width: 1114px) {
+  .ff-fp-services-figure {
+    width: 21%;
+  }
+}
+
+/* front page testimonials section */
+
+.ff-fp-testimonials {
+  background: #FFFCFC;
+}
+.ff-fp-testimonial-wrapper {
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.ff-fp-testimonial {
+  width: 100%;
+  height: 20rem;
+  background: yellow;
+  margin: 0.5rem;
+  /*padding: 4.5rem 2rem;*/
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+@media(min-width: 992px) {
+  .ff-fp-testimonial {
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    /*padding: 2.5rem 1rem;*/
+  }
+}
+
+.ff-fp-testimonial-opacity {
+  height: 100%;
+  width: 100%;
+  background: rgba(131, 127, 132, 0.5);
+  display: table;
+}
+
+#testimonial1 {
+  background: url("assets/testimonial-background-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#testimonial2 {
+  background: url("assets/testimonial-background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#testimonial3 {
+  background: url("assets/testimonial-background-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#testimonial4 {
+  background: url("assets/testimonial-background-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ff-fp-testimonial__content {
+  width: 100%;
+  height: 100%;
+  /*background: red;*/
+  padding: 1rem 0.5rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ff-fp-testimonial__content > p {
+  color: #fff;
+  font-size: 1.25em;
+  margin-top: 0;
+}
+
+
+
+/* CONTACT FORM SECTION */
+/* ========================================================================= */
+.ff-fp-contact {
+  /*background: #C9B7B5;*/
+}
+.ff-fp-contact-form__container {
+  max-width: 40em;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ff-fp-contact-form__header {
+  font-size: 2em;
+  font-family: 'Patrick Hand SC', cursive;
+}
+.ff-fp-contact-form__input,
+.ff-fp-contact-form__label,
+.ff-fp-contact-form__submit {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.ff-fp-contact-form__input,
+.ff-fp-contact-form__label {
+  display: block;
+  width: 100%;
+}
+
+.ff-fp-contact-form__input {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  /*border: 1px solid #ef27a6;*/
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #ef27a6;
+  border-radius: 0;
+  -webkit-appearance: none; /* Removes weird inner shadow on iOS Safari */
+}
+
+.ff-fp-contact-form__input:focus,
+.ff-fp-contact-form__submit:focus,
+.ff-fp-contact-form__submit:hover {
+  outline: none;
+  color: white;
+  background-color: #ef27a6;
+  border-color: #ef27a6;
+}
+
+#message {
+  min-height: 10em;
+}
+
+.ff-fp-contact-form__submit {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0.75em;
+  font-size: 1.25em;
+  background: none;
+  border: 1px solid #ef27a6;
+  transition: all 0.2s;
+}
+
+
+/* FOOTER */
+.ff-footer {
+  min-height: 5rem;
+  background: grey;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  display: table;
+  margin-top: 2.5rem;
+}
+
+.ff-footer__email {
+  /*background: pink;*/
+  display: table-cell;
+  vertical-align: middle;
+  width: 25%;
+}
+
+.ff-footer__email-icon {
+}
+
+.ff-footer__email-text {
+  display: inline;
+}
+
+.ff-footer__phone {
+  /*background: yellow;*/
+  display: table-cell;
+  vertical-align: middle;
+  width: 25%;
+}
+.ff-footer__phone-icon {}
+.ff-footer__phone-text {}
+
+.ff-footer__social-media {
+  /*background: purple;*/
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
