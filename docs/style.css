@@ -99,8 +99,9 @@ body {
 .ff-fp-banner {
   height: 80vh;
   width: 100%;
-  background: url('assets/ff-home-banner.jpg') no-repeat fixed;
-  background-size: cover;
+  background: url('assets/confetti-backgrounds/feature-logo.jpg') no-repeat;
+  background-size: 70%;
+  background-position: 50% 80%;
   margin-top: 170px;
 }
 
@@ -162,9 +163,10 @@ body {
 
 .ff-fp-about {
   /*font-size: 0;*/
-    background: url('assets/web_sprinkles_background.jpg');
+    background: url('assets/confetti-backgrounds/section-1.png') no-repeat;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
     min-height: 100%;
 }
 
@@ -212,6 +214,10 @@ body {
 /* SERVICES */
 .ff-fp-services {
   /*background: #C9B7B5;*/
+  background: url(assets/confetti-backgrounds/section-2.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+
 }
 .ff-fp-services__header {
   margin-bottom: 3rem;
@@ -296,7 +302,10 @@ span:nth-child(4n+1)*/
 /* front page testimonials section */
 
 .ff-fp-testimonials {
-  background: #FFFCFC;
+  /*background: #FFFCFC;*/
+  background: url(assets/confetti-backgrounds/section-3.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
 }
 .ff-fp-testimonial-wrapper {
   width: 100%;
@@ -376,6 +385,9 @@ span:nth-child(4n+1)*/
 /* ========================================================================= */
 .ff-fp-contact {
   /*background: #C9B7B5;*/
+  background: url(assets/confetti-backgrounds/section-4.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
 }
 .ff-fp-contact-form__container {
   max-width: 40em;
